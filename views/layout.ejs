@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>펫트너</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/public/assets/css/main.css" />
+		<link rel="stylesheet" href="/public/stylesheets/common.css" />
+		<link rel="stylesheet" type="text/css" href="/public/semantic/dist/semantic.min.css">
+	</head>
+	<body class="is-preload">
+    	<div class="bodywrap">
+    		<%- partial("header") %>
+    		<%- body %>	
+    		<%- partial("footer")%>
+    	</div>
+	</body>
+</html>
+
+<!-- Scripts -->
+<script src="/public/assets/js/jquery.min.js"></script>
+<script src="/public/assets/js/jquery.scrolly.min.js"></script>
+<script src="/public/assets/js/browser.min.js"></script>
+<script src="/public/assets/js/breakpoints.min.js"></script>
+<script src="/public/assets/js/util.js"></script>
+<script src="/public/assets/js/main.js"></script>
+
+<% if (js) { %>
+	<script src="/public/javascripts/<%= js %>"></script>
+<% } %>
+<script src="/public/semantic/dist/semantic.min.js"></script>

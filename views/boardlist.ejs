@@ -1,0 +1,70 @@
+<% layout("layout") -%>
+
+<!-- Portfolio -->
+<article id="portfolio" class="wrapper style1">
+	<div class="container">
+		<header>
+			<!--<h2>Here’s some stuff I made recently.</h2>-->
+			<!--<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>-->
+		</header>
+		<div class="row">
+			<% list.forEach(function(el, idx) {%>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="/detail/<%=el.id%>" class="image featured animal"><img src="/public/images/<%=el.image%>" alt="" /></a>
+						
+						<!--<dl>-->
+						<!--	<dt class="left"><div class="ui white horizontal label">접수일</div></dt>-->
+						<!--	<dd><%=el.receptday%></dd>-->
+						<!--	<dt class="left"><div class="ui white horizontal label">품종</div></dt>-->
+						<!--	<dd><%=el.race%></dd>-->
+						<!--	<dt class="left"><div class="ui white horizontal label">성별</div></dt>-->
+						<!--	<dd><%=el.gender%></dd>-->
+						<!--	<dt class="left"><div class="ui white horizontal label">발견장소</div></dt>-->
+						<!--	<dd><%=el.place%></dd>-->
+						<!--	<dt class="left"><div class="ui white horizontal label">특징</div></dt>-->
+						<!--	<dd><%=el.feature%></dd>-->
+						<!--	<dt class="left"><div class="ui white horizontal label">상태</div></dt>-->
+						<!--	<dd><%=el.state%></dd>-->
+						<!--</dl>-->
+						
+						<table class="animal">
+							<tr>
+								<th class="celltitle">접수일</th>
+								<td><%=el.receptday%></td>
+							</tr>
+							<tr>
+								<th class="celltitle">품종</th>
+								<td><%=el.race%></td>
+							</tr>
+							<tr>
+								<th class="celltitle">성별</th>
+								<td><%=el.gender%></td>
+							</tr>
+							<tr>
+								<th class="celltitle">발견장소</th>
+								<td><%=el.place%></td>
+							</tr>
+							<tr>
+								<th class="celltitle">특징</th>
+								<td><%=el.feature%></td>
+							</tr>
+							<tr>
+								<th class="celltitle">상태</th>
+								<td><%=el.state%></td>
+							</tr>
+						</table>
+						
+					</article>
+				</div>
+			<% }) %>
+		</div>
+		<!--<footer>-->
+		<!--	<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>-->
+		<!--	<a href="#contact" class="button large scrolly">Get in touch with me</a>-->
+		<!--</footer>-->
+	</div>
+</article>
+
+
+

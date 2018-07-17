@@ -1,0 +1,56 @@
+<% layout("layout") -%>
+
+<div class="ui vertical stripe segment">
+    
+    <div class="ui grid container">
+        
+        <div class="centered row">
+            <h2>"당신의 한 수는 누구에게 맡기겠습니까?"</h2>
+        </div>
+        <div class="centered row">
+            <h2>가장 쉬운 아웃소싱 신의한수</h2>
+        </div>
+        <div class="" style="margin:auto;width:460px">
+            
+            <form class="ui form" action="/login" method="post">
+                <div class="ui form">
+                  <div class="field">
+                    <label>Email</label>
+                    <div class="ui left icon input required">
+                      <input type="text" placeholder="Email">
+                      <i class="user icon"></i>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Password</label>
+                    <div class="ui left icon input required">
+                      <input type="password" placeholder="Password">
+                      <i class="lock icon"></i>
+                    </div>
+                  </div>
+                  <div class="ui field grid">
+                      <div class="one column centered row">
+                    
+                              <button class="ui right floated column center aligned secondary submit button" style="height:60px">
+                                  <div style="vertical-align:middle">
+                                    로그인
+                                  </div>
+                              </botton>
+                          
+                      </div>
+                      
+                      
+                  </div>
+                  
+                </div>
+            </form>
+            
+            <div class="ui field grid">
+                <div class="one column centered row center aligned">
+                          
+                  <a href="/signup"><h5 style="text-decoration:underline;color:black">회원가입</h5></a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

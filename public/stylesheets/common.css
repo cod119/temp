@@ -1,0 +1,110 @@
+dt.left {
+  float: left;
+  clear: left;
+}
+
+table.animal {
+  border-collapse: separate;
+  border-spacing: 0.3rem;
+}
+th.celltitle {
+  width: 6rem;
+  border-radius: 0.3rem;
+  background-color: #dcdcdc; 
+}
+img.circle {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
+  width: 6rem;
+  height: 6rem
+}
+div.textleft {
+  text-align: left;
+}
+.checklist {
+  margin: 1rem 0 2rem 0;
+}
+* {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+.bodywrap {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+
+.image.featured.animal img {
+	height: 18em;
+}
+.image.featured.shop img {
+  height: 10em;
+}
+
+
+
+/*//////////////////*/
+.bodywrap {
+    padding-bottom: 15em;
+  }
+img.circle {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem
+}
+.closetomiddle {
+  padding-top: 20%;
+}
+@media screen and (max-width: 1280px) {
+  .closetomiddle {
+    padding-top: 30%;
+  }
+  img.circle {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem
+  }
+  .bodywrap {
+    padding-bottom: 15em;
+  }
+}
+@media screen and (max-width: 736px) {
+  .closetomiddle {
+    padding-top: 30%;
+  }
+  img.circle {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
+  width: 8rem;
+  height: 8rem
+  }
+  #nav {
+    font-size: 0.8rem;
+  }
+  .bodywrap {
+    padding-bottom: 10em;
+  }
+  #top {
+    padding: 5em 0;
+  }
+}

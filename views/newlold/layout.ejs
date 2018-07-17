@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>신의한수</title>
+  <meta name="theme-color" content="#d7003a">
+  <link rel="stylesheet" type="text/css" href="stylesheets/common.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script 
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+  	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  	crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	
+	<%- partial("header") %>
+	<%- body %>
+	<%- partial("footer")%>
+	
+</body>
+</html>
+
+<% if (js) { %>
+	<script src="javascripts/<%= js %>"></script>
+<% } %>
+<script src="./semantic/dist/semantic.min.js"></script>
