@@ -28,10 +28,10 @@ router.get("/detail/:id", function(req, res) {
 //   res.render("apply", {js: "apply.html.js"});
 // })
 router.get("/apply/result", function(req, res) {
-  res.render("result", {js: "result.html.js"});
+  res.render("result", {applicant: req.session.applicant, js: "result.html.js"});
 })
 router.get("/apply/confirmed", function(req, res) {
-  res.render("confirmed", {js: "confirmed.html.js"});
+  res.render("confirmed", {applicant: req.session.applicant, js: "confirmed.html.js"});
 })
 router.get("/apply/:id", function(req, res) {
   var target = controller.boardlist.find(req.params.id);
@@ -39,6 +39,9 @@ router.get("/apply/:id", function(req, res) {
 })
 router.post("/apply/:id", function(req, res) {
   // console.log("apply post")
+  var target = controller.boardlist.find(req.params.id);
+  // console.log(req.body)
+  req.session.applicant = req.body;
   res.redirect("/apply/result");
 })
 
