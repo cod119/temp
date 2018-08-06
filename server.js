@@ -12,8 +12,8 @@ var app = express();
 var port = process.env.PORT || 8080;
 var ip = process.env.IP || "localhost";
 //for deploy
-//var port = 80;
-//var ip = "0.0.0.0";
+port = 80;
+ip = "0.0.0.0";
 
 /* Setup express application */
 app.set("views", __dirname + "/views");
