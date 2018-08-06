@@ -38,7 +38,7 @@ app.use(session(
 ));
 
 /* Load DB */
-var db = require("./db");
+// var db = require("./db");
 
 /* Set router */
 // app.use(express.static(__dirname + "/public"));
